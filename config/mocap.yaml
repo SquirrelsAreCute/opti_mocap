@@ -1,0 +1,50 @@
+#
+# Definition of all trackable objects
+# Identifier corresponds to Trackable ID set in Tracking Tools
+#
+rigid_bodies:
+    ## DANCER
+    '1':
+        pose: /dancer/head
+        pose2d: dancer/ground_head
+        child_frame_id: dancer/head_base_link
+        parent_frame_id: world
+    '2':
+        pose: /dancer/right_hand
+        pose2d: dancer/ground_right_hand
+        child_frame_id: dancer/right_hand_base_link
+        parent_frame_id: world
+    '3':
+        pose: /dancer/left_hand
+        pose2d: dancer/ground_left_hand
+        child_frame_id: dancer/left_hand_base_link
+        parent_frame_id: world
+
+    ## DRONES
+    '4':
+        pose: /uav1/mavros/mocap/pose
+        pose2d: uav1/ground_pose
+        child_frame_id: uav1/base_link
+        parent_frame_id: world
+    '5':
+        pose: /uav2/mavros/mocap/pose
+        pose2d: uav2/ground_pose
+        child_frame_id: uav2/base_link
+        parent_frame_id: world
+    '6':
+        pose: /uav3/mavros/mocap/pose
+        pose2d: uav3/ground_pose
+        child_frame_id: uav3/base_link
+        parent_frame_id: world
+    '7':
+        pose: /uav4/mavros/mocap/pose
+        pose2d: uav4/ground_pose
+        child_frame_id: uav4/base_link
+        parent_frame_id: world
+    '8':
+        pose: /uav5/mavros/mocap/pose
+        pose2d: uav5/ground_pose
+        child_frame_id: uav5/base_link
+        parent_frame_id: world
+optitrack_config:
+         multicast_address: 239.255.42.99
